@@ -164,7 +164,7 @@ class TrajectoryDataset(Dataset):
         self,
         data_dir,
         obs_len=8,
-        pred_len=4,          # ✅ 修复默认值：原来 pred_len=12（那是 seq_len=12 的旧硬编码误写）
+        pred_len=4,         
         skip=1,
         threshold=0.002,
         min_ped=1,
@@ -290,7 +290,7 @@ class TrajectoryDataset(Dataset):
         tyname = ty_dic['new'][1]
         area, year, tydate = ty_dic['old'][0][:2], ty_dic['old'][0][2:6], ty_dic['tydate']
 
-        root = r'/inspire/hdd/global_user/fengzhaoran-253107020007/TropiCycloneNet1'
+        root = r'/path/to/your/project_root'
         env_root = os.path.join(root, 'all_area_correct_location_includeunder15_2023')
         modal_root = os.path.join(root, 'all_ocean_gph500_2023')
 
