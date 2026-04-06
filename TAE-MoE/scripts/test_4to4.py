@@ -16,8 +16,8 @@ from TCNM.utils import relative_to_abs, dic2cuda, get_dset_path
 # =========================
 # ✅ 默认参数（你也可以命令行覆盖）
 # =========================
-DEFAULT_MODEL_PATH = "/inspire/qb-ilm/project/urbanlowaltitude/fengzhaoran-253107020007/TropiCycloneNet1/scripts/model_save4to4/test_bst_divi10_train_val_test_inlcude15_new_gph_o4_p4/checkpoint_with_model_05000.pt"
-DEFAULT_DATASET_ROOT = "/inspire/hdd/global_user/fengzhaoran-253107020007/TropiCycloneNet1/bst_divi10_train_val_test_inlcude15_2023_new"
+DEFAULT_MODEL_PATH = "/your/ckpt/path"
+DEFAULT_DATASET_ROOT = "/your/dataset/root"
 DEFAULT_DSET_TYPE = "test"
 DEFAULT_AREAS = ['EP', 'NA', 'NI', 'SI', 'SP', 'WP']
 DEFAULT_BEST_K = 6
